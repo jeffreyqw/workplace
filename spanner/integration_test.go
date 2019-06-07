@@ -2102,7 +2102,7 @@ func TestIntegration_ComputeEngineCredsWithServiceAccount(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	client.Connection()
+	client.SetGoogleClientInfo()
 	err = deleteServiceAccount(account.Email)
 	if err != nil {
 		t.Fatal(err)
